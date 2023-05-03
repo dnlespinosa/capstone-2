@@ -43,14 +43,14 @@ const Workout = ({ programs } ) => {
     return (
         <>
             {workout && exercises ? 
-                <div>
+                <div style={{color: 'white'}}>
                     <h1>{workout.name}</h1>
                     <button onClick={handleSelect} disabled={selected}>{selected ? 'Selected' : 'Select Program'}</button>
                     {exercises.map(exercise => (
                         <SingleWorkout exercise={exercise}/>
                     ))}
                 </div>
-                : <h1>Loading</h1>    
+                : <h1 style={{color: 'white'}}>Loading</h1>    
             }
             
             

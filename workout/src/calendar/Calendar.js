@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect, useRef } from 'react';
 import { format, parse, startOfWeek, endOfWeek, addDays, addMonths, subMonths, startOfMonth, endOfMonth, isSameMonth, isSameDay, isToday } from 'date-fns';
-import './Calendar.css';
+import '../App.css';
 import { Link } from 'react-router-dom';
 import UserContext from '../auth/UserContext';
 import WorkoutApi from '../api/api';
@@ -152,6 +152,7 @@ const Calendar = () => {
         <>
             
             <div className='calendar'>
+                <h1>YOUR PROGRAM</h1>
                 {renderHeader()}
                 {renderDays()}
                 {renderCells()}

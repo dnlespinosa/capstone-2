@@ -242,6 +242,7 @@ function App() {
     <BrowserRouter>
       <UserContext.Provider value={{ currentUser, setCurrentUser, hasSelectedWorkout, selectWorkout, todaysWorkout, workout, exercises, setWorkout }}>
         <div className="App">
+          
           <Navigation currentUser={currentUser} logout={logout}/>
           <Routess login={login} signup={signup} currentUser={currentUser} programs={programs} today={today}/>
         </div>

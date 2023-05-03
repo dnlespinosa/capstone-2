@@ -70,7 +70,7 @@ const PersonalWorkout = ({ programs } ) => {
             {workout && exercises ? 
                 <div>
                     
-                        <h1>{workout.name}</h1>
+                        <h1 style={{color: 'white'}}>{workout.name}</h1>
                     
                         {exercises.map(exercise => (
                             <PersonalSingleWorkout exercise={exercise} setFormData={setFormData} addData={addData}/>

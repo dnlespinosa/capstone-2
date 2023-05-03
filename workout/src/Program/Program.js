@@ -4,7 +4,7 @@ import Calendar from '../calendar/Calendar'
 const Program = () => {
     return (
         <>
-            <h1>The Program Page</h1>
+            
             <Calendar />
         </>
     )

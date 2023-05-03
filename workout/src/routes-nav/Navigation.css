@@ -1,0 +1,23 @@
+.Navigation {
+    background-color: white;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+    color: black
+  }
+
+
+
+
+ul {
+  list-style-type: none;
+}
+
+.list-item {
+  display: inline-flex;
+  margin: 0 10px;
+}
+
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: black;
+  }
