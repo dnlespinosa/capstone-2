@@ -76,10 +76,19 @@ const PersonalWorkout = ({ programs } ) => {
                             <PersonalSingleWorkout exercise={exercise} setFormData={setFormData} addData={addData}/>
                         ))}
                     <form onSubmit={handleSubmit}>
-                        <button disabled={selected}>Complete workout</button>
+                        <button disabled={selected} style={{ backgroundColor: '#aaaaaa', 
+                                                            border: 'none',
+                                                            color: 'white',
+                                                            padding: '15px 32px',
+                                                            textAlign: 'center',
+                                                            textDecoration: 'none',
+                                                            borderRadius: '5px',
+                                                            display: 'inline-block',
+                                                            fontSize: '16px'}}
+                        >Complete workout</button>
                     </form>
                 </div>
-                : <h1>Loading</h1>    
+                : <h1 style={{color: 'white'}}>Loading</h1>    
             }
             
             

@@ -6,7 +6,7 @@ const ProgramCard = ({ name, exercises, id }) => {
 
     return (
         <>
-        <div style={{backgroundColor: 'white', border: '5px solid #2a2a2a', color: '#2a2a2a', padding: '20px', margin: '10px 500px 10px 500px'}}>
+        <div id={name} style={{backgroundColor: 'white', border: '5px solid #2a2a2a', color: '#2a2a2a', padding: '20px', margin: '10px 500px 10px 500px'}}>
         <Link to={`/browse/${name}`}>
             <h2>{name}</h2>
         </Link>
