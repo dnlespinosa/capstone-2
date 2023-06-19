@@ -26,7 +26,7 @@ const Homepage = ({ currentUser, today }) => {
                             </Link> 
                         </div> : <div></div>}
                 </div> : 
-                <div>
+                <div style={{color: 'white'}}>
                     <h1>Welcome To The Workout App</h1>
                     <h2>Don't forget to login or signup!</h2>
                 </div>  

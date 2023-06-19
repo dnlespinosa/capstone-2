@@ -25,25 +25,27 @@ const Login = ({ login }) => {
 
     return (
         <>
-            <h2>Login Form</h2>
+            <div style={{color: 'white'}}>
+                <h2>Login Form</h2>
 
-            <form onSubmit={handleSubmit}>
-                <label>Username</label>
-                <input 
-                    name='username'
-                    value={formData.username}
-                    onChange={handleChange} 
-                />
+                <form onSubmit={handleSubmit}>
+                    <label>Username</label>
+                    <input 
+                        name='username'
+                        value={formData.username}
+                        onChange={handleChange} 
+                    />
 
-                <label>Password</label>
-                <input 
-                    name='password'
-                    value={formData.password}
-                    onChange={handleChange} 
-                />
+                    <label>Password</label>
+                    <input 
+                        name='password'
+                        value={formData.password}
+                        onChange={handleChange} 
+                    />
 
-                <button type='submit' onSubmit={handleSubmit}>Login!</button>
-            </form>
+                    <button type='submit' onSubmit={handleSubmit}>Login!</button>
+                </form>
+            </div>
         </>
     )
 }

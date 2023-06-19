@@ -8,6 +8,13 @@ CREATE TABLE users (
     email TEXT NOT NULL CHECK(position('@' IN email) > 1)
 );
 
+CREATE TABLE workouts (
+    workout_id SERIAL PRIMARY KEY,
+    name TEXT,
+    day_of_month INT, 
+    exercise_names TEXT ARRAY
+);
+
 CREATE TABLE workout_program (
     username VARCHAR(25)
         REFERENCES users ON DELETE CASCADE, 
@@ -15,10 +22,5 @@ CREATE TABLE workout_program (
         REFERENCES workouts
 );
 
-CREATE TABLE workouts (
-    workout_id SERIAL PRIMARY KEY,
-    name TEXT,
-    day_of_month INT, 
-    exercise_names TEXT ARRAY
-);
+
 

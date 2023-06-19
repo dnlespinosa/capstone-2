@@ -28,6 +28,7 @@ const Signup = ({ signup }) => {
 
     return (
         <>
+            <div style={{color: 'white'}}>
             <h2>Signup Form</h2>
 
             <form onSubmit={handleSubmit}>
@@ -68,6 +69,7 @@ const Signup = ({ signup }) => {
 
                 <button type='submit' onSubmit={handleSubmit}>Sign Up!</button>
             </form>
+            </div>
         </>
     )
 }

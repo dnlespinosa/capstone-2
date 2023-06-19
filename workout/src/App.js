@@ -12,6 +12,7 @@ import UserContext from './auth/UserContext';
 import { format, parse, startOfWeek, endOfWeek, addDays, addMonths, subMonths, startOfMonth, endOfMonth, isSameMonth, isSameDay, isToday } from 'date-fns';
 export const token_storage_id = 'workout-token'
 
+const SECRET_KEY = process.env.REACT_APP_SECRET_KEY
 
 
 function App() {
@@ -62,7 +63,7 @@ function App() {
                     url: 'https://musclewiki.p.rapidapi.com/exercises',
                     params: {name: exercise},
                     headers: {
-                    'X-RapidAPI-Key': '1f4b3e251bmshb1df2538c036ddfp1c6675jsn19129a6f9614',
+                    'X-RapidAPI-Key': SECRET_KEY,
                     'X-RapidAPI-Host': 'musclewiki.p.rapidapi.com'
                     }
                 };
