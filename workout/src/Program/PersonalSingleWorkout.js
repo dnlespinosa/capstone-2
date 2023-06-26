@@ -3,6 +3,8 @@ import Select from 'react-select'
 
 
 const PersonalSingleWorkout = ({ exercise, setFormData, addData }) => {
+    
+    
     const INTIALSTATE = {
         name: exercise.exercise_name,
         sets:0, 

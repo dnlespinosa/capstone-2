@@ -19,7 +19,6 @@ const Workout = ({ programs } ) => {
     useEffect(function getWorkoutForPage(){
         async function getWorkoutFor(){
             setWorkout(await WorkoutApi.getWorkout(name))
-
         }
         getWorkoutFor()
     }, [])

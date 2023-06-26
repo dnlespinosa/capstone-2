@@ -13,3 +13,27 @@ it("renders without crashing", function () {
         </MemoryRouter>,
     );
   });
+
+  // snapshot 
+it('matches snapshot', function() {
+  const { asFragment } = render(
+          <MemoryRouter>
+              <UserProvider>
+                  <Homepage />
+              </UserProvider>
+          </MemoryRouter>
+      )
+  expect(asFragment()).toMatchSnapshot();
+})
+
+// it('queries', () => {
+//   const { getByText } = render(
+//     <MemoryRouter>
+//       <UserProvider>
+//           <Homepage />
+//       </UserProvider>
+//     </MemoryRouter>,
+//   )
+
+//   console.log(getByText('Welcome To The Workout App', {exact: false}))
+// })

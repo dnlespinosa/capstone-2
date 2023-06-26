@@ -13,6 +13,7 @@ const PersonalWorkout = ({ programs } ) => {
     const history = useNavigate()
     const { hasSelectedWorkout, selectWorkout, currentUser, workout, setWorkout, exercises, setCurrentUser } = useContext(UserContext)
     const [selected, setSelected] = useState();
+
     
     useEffect(function getWorkoutForPage(){
         async function getWorkoutFor(){
@@ -73,7 +74,7 @@ const PersonalWorkout = ({ programs } ) => {
                         <h1 style={{color: 'white'}}>{workout.name}</h1>
                     
                         {exercises.map(exercise => (
-                            <PersonalSingleWorkout exercise={exercise} setFormData={setFormData} addData={addData}/>
+                            <PersonalSingleWorkout key={exercise.exercise_name} exercise={exercise} setFormData={setFormData} addData={addData}/>
                         ))}
                     <form onSubmit={handleSubmit}>
                         <button disabled={selected} style={{ backgroundColor: '#aaaaaa', 

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PersonalSingleWorkout /> matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    id="Barbell Pronated Row"
+  >
+    <div
+      style="background-color: white; border: 5px solid #2a2a2a; display: inline-block; color: rgb(42, 42, 42); padding: 20px; margin: 10px 200px 10px 200px;"
+    >
+      <div>
+        <h3>
+          Barbell Pronated Row
+        </h3>
+        <form>
+          <label
+            for="sets"
+            style="margin: 5px;"
+          >
+            Sets
+          </label>
+          <input
+            id="sets"
+            name="sets"
+            style="margin: 5px 20px 5px 0px;"
+            type="number"
+          />
+          <label
+            for="reps"
+            style="margin: 5px;"
+          >
+            Reps
+          </label>
+          <input
+            id="reps"
+            name="reps"
+            style="margin: 5px 20px 5px 0px;"
+            type="number"
+          />
+          <button>
+            Complete Exercise
+          </button>
+        </form>
+        <p>
+          Muscle Group: Lats
+        </p>
+        <p>
+          Instructions
+        </p>
+        <div
+          style="display: block; margin: 10px; padding: 10px; text-align: center;"
+        >
+          <li>
+            Grab the barbell with an overhand grip. Hinge forward while keeping your back flat until your torso is about parallel with the ground.
+          </li>
+          <li>
+            Let your arms hang freely.
+          </li>
+          <li>
+            Pull the bar to your torso while tucking your elbows in slightly.
+          </li>
+          <li>
+            Extend your elbows fully before initiating the next rep.
+          </li>
+          <video
+            controls=""
+            style="padding: 20px;"
+            width="50%"
+          >
+            <source
+              src="https://media.musclewiki.com/media/uploads/videos/branded/male-barbell-pronated-row-front.mp4#t=0.1"
+              type="video/mp4"
+            />
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

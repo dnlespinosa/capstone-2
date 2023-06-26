@@ -42,6 +42,7 @@ const Signup = ({ signup }) => {
                 <label>Password</label>
                 <input 
                     name='password'
+                    type='password'
                     value={formData.password}
                     onChange={handleChange} 
                 />

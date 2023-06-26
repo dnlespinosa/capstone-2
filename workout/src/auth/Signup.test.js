@@ -5,6 +5,17 @@ import Signup from "./Signup";
 import { UserProvider } from "../testUtils";
 
 
+
+it("renders without crashing", function () {
+  render(
+      <MemoryRouter>
+        <UserProvider>
+          <Signup />
+        </UserProvider>
+      </MemoryRouter>,
+  );
+});
+
 it("matches snapshot", function () {
   const { asFragment } = render(
       <MemoryRouter>

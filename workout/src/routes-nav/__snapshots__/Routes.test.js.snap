@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      style="color: white;"
+    >
+      <h1>
+        Welcome To The Workout App
+      </h1>
+      <h2>
+        Don't forget to login or signup!
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;

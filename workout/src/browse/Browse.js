@@ -6,7 +6,6 @@ import axios from 'axios';
 const Browse = ({ programs }) => {
 
 
-
     return (
         <>
             <div>

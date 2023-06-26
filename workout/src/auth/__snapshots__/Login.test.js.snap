@@ -6,7 +6,7 @@ exports[`matches snapshot 1`] = `
     style="color: white;"
   >
     <h2>
-      Signup Form
+      Login Form
     </h2>
     <form>
       <label>
@@ -21,34 +21,12 @@ exports[`matches snapshot 1`] = `
       </label>
       <input
         name="password"
-        type="password"
-        value=""
-      />
-      <label>
-        First Name
-      </label>
-      <input
-        name="firstName"
-        value=""
-      />
-      <label>
-        Last Name
-      </label>
-      <input
-        name="lastName"
-        value=""
-      />
-      <label>
-        Email
-      </label>
-      <input
-        name="email"
         value=""
       />
       <button
         type="submit"
       >
-        Sign Up!
+        Login!
       </button>
     </form>
   </div>

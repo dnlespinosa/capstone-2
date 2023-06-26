@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgramCard /> matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    style="background-color: white; border: 5px solid #2a2a2a; color: rgb(42, 42, 42); padding: 20px; margin: 10px 500px 10px 500px;"
+  >
+    <a
+      href="/browse/undefined"
+    >
+      <h2 />
+    </a>
+    <p>
+      Barbell Bench Press
+    </p>
+    <p>
+      Dumbbell Alternating Single Arm Press
+    </p>
+    <p>
+      Cable Pec Fly
+    </p>
+    <p>
+      Cable Overhead Tricep Extension
+    </p>
+    <p>
+      Push Up
+    </p>
+  </div>
+</DocumentFragment>
+`;

@@ -1,31 +1,36 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { MemoryRouter } from "react-router";
-import Browse from "./Browse";
+import { MemoryRouter, useNavigate } from "react-router";
+import Workout from "./Workout";
 import { UserProvider } from "../testUtils";
 
 
+
+
+// smoke test
 it("renders without crashing", function () {
-    render(
-        <MemoryRouter>
-          <UserProvider>
-            <Browse />
-          </UserProvider>
-        </MemoryRouter>,
-    );
+  render(
+      <MemoryRouter>
+        <UserProvider>
+          <Workout />
+        </UserProvider>
+      </MemoryRouter>,
+  );
 });
 
-  // snapshot 
+// snapshot 
 it('matches snapshot', function() {
     const { asFragment } = render(
             <MemoryRouter>
                 <UserProvider>
-                    <Browse />
+                    <Workout />
                 </UserProvider>
             </MemoryRouter>
         )
     expect(asFragment()).toMatchSnapshot();
   })
+
+
 
 
 

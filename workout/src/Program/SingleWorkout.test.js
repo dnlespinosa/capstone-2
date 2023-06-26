@@ -1,9 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
-import Navigation from "./Navigation";
+import SingleWorkout from "./SingleWorkout";
 import { UserProvider } from "../testUtils";
-import jest from 'jest'
 
 
 // smoke test
@@ -11,7 +10,7 @@ it("renders without crashing", function () {
   render(
       <MemoryRouter>
         <UserProvider>
-          <Navigation />
+          <SingleWorkout />
         </UserProvider>
       </MemoryRouter>,
   );
@@ -19,18 +18,15 @@ it("renders without crashing", function () {
 
 // snapshot 
 it('matches snapshot', function() {
-  const { asFragment } = render(
-          <MemoryRouter>
-              <UserProvider>
-                  <Navigation />
-              </UserProvider>
-          </MemoryRouter>
-      )
-  expect(asFragment()).toMatchSnapshot();
-})
-
-
-
+    const { asFragment } = render(
+            <MemoryRouter>
+                <UserProvider>
+                    <SingleWorkout />
+                </UserProvider>
+            </MemoryRouter>
+        )
+    expect(asFragment()).toMatchSnapshot();
+  })
 
 
 

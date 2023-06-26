@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './SingleWorkout.css'
 
 const SingleWorkout = ({ exercise }) => {
 
